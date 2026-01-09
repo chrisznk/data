@@ -1,19 +1,10 @@
-# TubeTest Tracker Transfer Archive
+# Repository Overview
 
-This repository is a lightweight archive of the assets that were provided for the TubeTest Tracker handoff. It currently contains the raw uploads that were supplied (several `.docx` documents with instructions and a large `video_details` CSV export). No application source code lives here.
+This repository stores a small collection of prompt-related documents and a sample CSV export. The files currently included are:
 
-## Contents
-- `Prompt ultime Script.docx` and `Prompt ultime Script Prépa.docx`: documentation provided during the handoff.
-- `ListeInstructionsPourPrompt.docx`: additional written instructions.
-- `video_details - 2023-07-31T174006.771.csv`: exported video metadata.
+- `ListeInstructionsPourPrompt.docx` – a Word document of instructions (content not modified here).
+- `Prompt ultime Script.docx` – a Word document likely containing a final prompt script.
+- `Prompt ultime Script Prépa.docx` – a Word document likely containing preparation notes for the prompt script.
+- `video_details - 2023-07-31T174006.771.csv` – a CSV file of video metadata exported on 2023-07-31.
 
-## Usage notes
-- Treat the files in this repository as reference material only; they may contain sensitive operational details that should not be redistributed.
-- If you need to extract text from the `.docx` files, convert them locally (for example with `pandoc` or LibreOffice) rather than editing the originals in place.
-- Avoid committing secrets or environment values. If credentials are discovered in the documents, move them to a secure secrets store and redact them from version control.
-- Should application code be added later, consider creating a fresh Next.js/Firebase project directory (`/home/ubuntu/app`) rather than mixing it with these artifacts.
-
-## Next steps
-1. Review the documents for any sensitive information and ensure it is managed securely.
-2. Decide whether to keep this repository solely for documentation or migrate the relevant guidance into the actual application repository.
-3. If the CSV is needed for analytics, import it into your preferred data tooling and add a short data dictionary in this repository.
+No code is present in this repository; it is intended as a document archive. If you add new materials, keep this README updated so future contributors can quickly understand the contents.
